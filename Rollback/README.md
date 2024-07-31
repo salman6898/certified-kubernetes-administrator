@@ -12,6 +12,8 @@ metadata:
   name: nginx-deployment
   labels:
     run: nginx
+  annotations:
+    kubernetes.io/change-cause: "image updated to 1.14.2"
 spec:
   replicas: 3
   selector:
